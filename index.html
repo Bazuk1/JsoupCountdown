@@ -128,28 +128,7 @@ border-radius: 7px;
           document.getElementById("EventCountdown").innerHTML = "Doomsday Event";
           document.getElementById("countdown").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
         }, 1000);
-        function eventCountdown() {
-        var x = document.getElementById("EventCountdown");
-        if (x.style.display === "none") {
-         x.style.display = "block";
-        } else {
-         x.style.display = "none";
-        }
-        var y = document.getElementById("countdown");
-        if (y.style.display === "none") {
-         y.style.display = "block";
-        } else {
-          y.style.display = "none";
-  }
-}
-          var o = document.getElementById("SeasonCountdown");
-          o.style.display = "none";
-          var p = document.getElementById("countdown");
-          p.style.display = "none";
-          var o1 = document.getElementById("EventCountdown");
-          o1.style.display = "none";
-          var p1 = document.getElementById("countdownend");
-          p1.style.display = "none";
+    
           var x = setInterval(function() {
           var now = new Date().getTime();
           var distanceEnd = countDownDateEnd - now;
